@@ -36,9 +36,15 @@ section{
 /* ================= HEADER NUEVO ================= */
 
 header{
+    position:fixed;       
+    top:0;
+    left:0;
+    width:100%;
     background:#2f5396;
     padding:15px 40px;
+    z-index:1000;         /* siempre arriba */
 }
+
 
 .header-container{
     display:flex;
@@ -145,7 +151,34 @@ header{
     width:100%;
     height:420px;                 /* ajusta a tu gusto */
     background-image: url('/IMAGENES/BaFondo.jpg');
-    background-size: cover;       /* 🔥 llena todo el ancho */
+    background-size: cover;       /* llena todo el ancho */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.espinilleras{
+    width:100%;
+    height:420px;                 /* ajusta a tu gusto */
+    background-image: url('/IMAGENES/EsFondo.jpg');
+    background-size: cover;       /* llena todo el ancho */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.guantes{
+    width:100%;
+    height:420px;                 /* ajusta a tu gusto */
+    background-image: url('/IMAGENES/GuFondo.jpg');
+    background-size: cover;       /* llena todo el ancho */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.camisetas{
+    width:100%;
+    height:420px;                 /* ajusta a tu gusto */
+    background-image: url('/IMAGENES/CaFondo.jpg');
+    background-size: cover;       /* llena todo el ancho */
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
