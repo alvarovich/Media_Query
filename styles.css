@@ -6,14 +6,32 @@
 }
 
 body{
-    background:#e6e6e6;
+    background:#ffffff;
     margin:0;
 }
 
 section{
-    padding:0;
-    margin-bottom:40px;
+    margin: 0;
+    padding: 0;
 }
+
+.section-img::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:90px;  /* controla la suavidad */
+    background:linear-gradient(
+        to bottom,
+        rgba(230,230,230,0),
+        #e6e6e6
+    );
+    pointer-events:none;
+}
+
+
+
 
 /* ================= HEADER NUEVO ================= */
 
@@ -137,6 +155,7 @@ header{
     position:absolute;
     bottom:30px;   /* 🔹 separación inferior */
     right:30px;    /* 🔹 separación derecha */
+    z-index: 2;
 }
 
 .btn button{
