@@ -85,20 +85,17 @@ header{
 }
 
 
-.categorias button{
+.categorias a{
+    text-decoration:none;
     background:#1f3f7c;
     color:white;
     padding:6px 15px;
-    border:none;              /* 🔹 elimina borde */
-    outline:none;             /* 🔹 elimina relieve al hacer click */
-    box-shadow:none;          /* 🔹 elimina sombras */
     border-radius:6px;
-    cursor:pointer;
     font-size:14px;
     transition:background 0.3s;
 }
 
-.categorias button:hover{
+.categorias a:hover{
     background:#162c57;
 }
 
