@@ -7,6 +7,12 @@
 
 body{
     background:#e6e6e6;
+    margin:0;
+}
+
+section{
+    margin:0;
+    padding:0;
 }
 
 /* ================= HEADER NUEVO ================= */
@@ -54,17 +60,20 @@ header{
 }
 
 
-.categorias h4{
+.categorias button{
     background:#1f3f7c;
     color:white;
     padding:6px 15px;
+    border:none;              /* 🔹 elimina borde */
+    outline:none;             /* 🔹 elimina relieve al hacer click */
+    box-shadow:none;          /* 🔹 elimina sombras */
     border-radius:6px;
     cursor:pointer;
     font-size:14px;
-    transition:0.3s;
+    transition:background 0.3s;
 }
 
-.categorias h4:hover{
+.categorias button:hover{
     background:#162c57;
 }
 
@@ -104,45 +113,40 @@ header{
 
 /* ================= PRODUCTOS ================= */
 
-.productos{
-    display:flex;
-    justify-content:space-around;
-    align-items:flex-start;
-    padding:60px;
+.botas{
+    width:100%;
+    height:420px;                 /* ajusta a tu gusto */
+    background-image: url('/IMAGENES/ZaFondo.jpg');
+    background-size: cover;       /* 🔥 llena todo el ancho */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-/* Columnas */
-.izquierda, .derecha{
-    display:flex;
-    flex-direction:column;
-    gap:60px;
+
+.btn-botas{
+    position:absolute;
+    bottom:30px;   /* 🔹 separación inferior */
+    right:30px;    /* 🔹 separación derecha */
 }
 
-.centro{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-/* Producto */
-.producto img{
-    width:220px;
-}
-
-.centro img{
-    width:260px;
-}
-
-/* Cuadro azul info */
-.info{
-    background:#2f5396;
+.btn-botas button{
+    background:#1f3f7c;
     color:white;
-    padding:10px;
+    border:none;
+    padding:10px 25px;
     border-radius:8px;
-    margin-top:10px;
-    text-align:center;
-    font-size:14px;
+    font-size:15px;
+    cursor:pointer;
+    box-shadow:none;
+    transition:background 0.3s, transform 0.2s;
 }
+
+.btn-botas button:hover{
+    background:#162c57;
+    transform: translateY(-2px); /* hover elegante */
+}
+
 
 /* Responsive */
 @media(max-width:1000px){
