@@ -8,6 +8,7 @@
 body{
     background:#ffffff;
     margin:0;
+    padding-top:95px;   /* espacio para el header fijo */
 }
 
 section{
@@ -212,14 +213,51 @@ header{
 
 
 /* Responsive */
-@media(max-width:1000px){
-    .productos{
-        flex-direction:column;
-        align-items:center;
-        gap:40px;
-    }
+@media (max-width:768px){
+header{
+    padding:10px 20px;
+}
 
-    .izquierda, .derecha{
-        flex-direction:row;
-    }
+.header-container{
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.logo{
+    width:55px;
+}
+
+.logo-area h1{
+    font-size:16px;
+}
+.categorias{
+    display:none;
+}
+.search-bar{
+    order:3;
+    width:100%;
+    margin:10px 0 0;
+}
+
+.search-bar input{
+    width:100%;
+}
+.icons img{
+    width:28px;
+    margin-left:auto;
+}
+.section-img{
+    height:260px;   /* menos alto en móvil */
+}
+.btn{
+    bottom:20px;
+    right:20px;
+}
+
+.btn button{
+    padding:8px 20px;
+    font-size:14px;
+}
+.section-img::after{
+    height:50px;
+}
 }
