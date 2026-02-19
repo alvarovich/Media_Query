@@ -9,76 +9,88 @@ body{
     background:#e6e6e6;
 }
 
-/* ================= HEADER ================= */
+/* ================= HEADER NUEVO ================= */
 
 header{
     background:#2f5396;
-    padding-bottom:20px;
-    position:relative;
+    padding:15px 40px;
 }
 
-/* Parte superior */
-.header-top{
+.header-container{
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    padding:20px 60px;
+    width:100%;
 }
 
-/* Logo */
-.logo{
-    width:90px;
-}
 
-/* Título centrado */
-h1{
-    color:white;
-    font-size:45px;
-    letter-spacing:3px;
-}
-
-/* Iconos derecha */
-.icons img{
-    width:30px;
-    margin-left:15px;
-    cursor:pointer;
-}
-
-/* Barra búsqueda */
-.search-bar{
+/* Logo + nombre */
+.logo-area{
     display:flex;
-    justify-content:center;
-    margin-top:15px;
+    align-items:center;
+    gap:15px;
+    margin-right:40px;   /* separa logo de categorías */
 }
 
-.search-bar input{
-    width:50%;
-    padding:10px 15px;
-    border-radius:5px;
-    border:none;
-    outline:none;
+
+.logo{
+    width:60px;
+}
+
+.logo-area h1{
+    color:white;
+    font-size:22px;
+    letter-spacing:2px;
 }
 
 /* Categorías */
 .categorias{
     display:flex;
-    justify-content:center;
-    gap:20px;
-    margin-top:20px;
+    gap:15px;
 }
+
 
 .categorias h4{
     background:#1f3f7c;
     color:white;
-    padding:8px 20px;
+    padding:6px 15px;
     border-radius:6px;
     cursor:pointer;
+    font-size:14px;
     transition:0.3s;
 }
 
 .categorias h4:hover{
     background:#162c57;
 }
+
+/* Barra búsqueda */
+.search-bar{
+    margin-left:auto;   /* empuja todo hacia la derecha */
+    margin-right:30px;  /* separa de los iconos */
+}
+
+.search-bar input{
+    padding:8px 20px;
+    border-radius:20px;
+    border:none;
+    width:320px;   /* más larga */
+    outline:none;
+}
+
+
+/* Iconos */
+.icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+.icons img{
+    width:28px;
+    cursor:pointer;
+}
+
 
 /* ================= PRODUCTOS ================= */
 
