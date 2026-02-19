@@ -11,8 +11,8 @@ body{
 }
 
 section{
-    margin:0;
     padding:0;
+    margin-bottom:40px;
 }
 
 /* ================= HEADER NUEVO ================= */
@@ -112,7 +112,7 @@ header{
 
 
 /* ================= PRODUCTOS ================= */
-
+/* Botas */
 .botas{
     width:100%;
     height:420px;                 /* ajusta a tu gusto */
@@ -122,15 +122,24 @@ header{
     background-repeat: no-repeat;
     position: relative;
 }
+/* Balones */
+.balones{
+    width:100%;
+    height:420px;                 /* ajusta a tu gusto */
+    background-image: url('/IMAGENES/BaFondo.jpg');
+    background-size: cover;       /* 🔥 llena todo el ancho */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
 
-
-.btn-botas{
+.btn{
     position:absolute;
     bottom:30px;   /* 🔹 separación inferior */
     right:30px;    /* 🔹 separación derecha */
 }
 
-.btn-botas button{
+.btn button{
     background:#1f3f7c;
     color:white;
     border:none;
@@ -142,10 +151,12 @@ header{
     transition:background 0.3s, transform 0.2s;
 }
 
-.btn-botas button:hover{
+.btn button:hover{
     background:#162c57;
     transform: translateY(-2px); /* hover elegante */
 }
+
+
 
 
 /* Responsive */
