@@ -36,6 +36,7 @@ header{
     align-items:center;
     gap:15px;
     margin-right:40px;   /* separa logo de categorías */
+    text-decoration:none;
 }
 
 
@@ -46,7 +47,9 @@ header{
     border-radius:50%;
 }
 
-
+.logo-area img:hover{
+    background:#e0e0e0;
+}
 
 .logo-area h1{
     color:white;
@@ -107,4 +110,39 @@ header{
 }
 .icons img:hover{
     background:#e0e0e0;
+}
+
+/* Responsive */
+@media (max-width:768px){
+header{
+    padding:10px 20px;
+}
+
+.header-container{
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.logo{
+    width:55px;
+}
+
+.logo-area h1{
+    font-size:16px;
+}
+.categorias{
+    display:none;
+}
+.search-bar{
+    order:3;
+    width:100%;
+    margin:10px 0 0;
+}
+
+.search-bar input{
+    width:100%;
+}
+.icons img{
+    width:28px;
+    margin-left:auto;
+}
 }
