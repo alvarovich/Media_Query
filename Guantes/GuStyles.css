@@ -112,6 +112,61 @@ header{
     background:#e0e0e0;
 }
 
+/* ================= SECCIÓN GUANTES ================= */
+
+.Producto-guantes{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    padding:60px 40px;
+}
+
+.Producto-guantes > div{
+    background:#ffffff; /* tono más claro que el header */
+    border-radius:20px;
+    padding:40px;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:40px;
+}
+
+/* Tarjetas individuales */
+.Producto-guantes > div > div{
+    background:#3b5fa3;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between; /* distribuye imagen y texto */
+    align-items:center;
+}
+
+/* Contenedor fijo para imagen */
+.Producto-guantes img{
+    height:180px;        /* MISMA ALTURA PARA TODAS */
+    width:auto;          /* mantiene proporción */
+    object-fit:contain;  /* no se deforman */
+    margin-bottom:15px;
+}
+/* Hover efecto */
+.Producto-guantes > div > div:hover{
+    background:#1f3f7c;
+    transform:translateY(-5px);
+}
+
+/* Imágenes */
+.Producto-guantes img{
+    width:100%;
+    max-width:180px;
+    margin-bottom:15px;
+}
+
 /* Responsive */
 @media (max-width:768px){
 header{
@@ -144,5 +199,9 @@ header{
 .icons img{
     width:28px;
     margin-left:auto;
+}
+.Producto-guantes > div{
+    grid-template-columns: 1fr; /* uno debajo de otro */
+    padding:25px;
 }
 }
