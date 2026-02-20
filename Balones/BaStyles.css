@@ -36,6 +36,7 @@ header{
     align-items:center;
     gap:15px;
     margin-right:40px;   /* separa logo de categorías */
+    text-decoration:none;
 }
 
 
@@ -45,7 +46,9 @@ header{
     padding:2px;        
     border-radius:50%;
 }
-
+.logo-area img:hover{
+    background:#e0e0e0;
+}
 
 
 .logo-area h1{
@@ -104,4 +107,7 @@ header{
     padding:2px;         /* más círculo */
     border-radius:50%;
     cursor:pointer;
+}
+.icons img:hover{
+    background:#e0e0e0;
 }

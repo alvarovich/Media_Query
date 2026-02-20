@@ -129,9 +129,9 @@ header{
     border-radius:50%;
     cursor:pointer;
 }
-
-
-
+.icons img:hover{
+    background:#e0e0e0;
+}
 
 /* ================= PRODUCTOS ================= */
 /* Botas */
