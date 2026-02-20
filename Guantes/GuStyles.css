@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url("../IMAGENES/campo.jpg");
+    background-size: cover;        /* ocupa todo el espacio */
+    background-position: center;   /* centrada */
+    background-repeat: no-repeat;
+    margin:0;
+    padding-top:95px;   /* espacio para el header fijo */
+}
+/* ================= HEADER NUEVO ================= */
+
+header{
+    position:fixed;       
+    top:0;
+    left:0;
+    width:100%;
+    background:#2f5396;
+    padding:15px 40px;
+    z-index:1000;         /* siempre arriba */
+}
+
+
+.header-container{
+    display:flex;
+    align-items:center;
+    width:100%;
+}
+
+
+/* Logo + nombre */
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-right:40px;   /* separa logo de categorías */
+    text-decoration:none;
+}
+
+
+.logo{
+    width:85px;          
+    background:white;
+    padding:2px;        
+    border-radius:50%;
+}
+
+.logo-area img:hover{
+    background:#e0e0e0;
+}
+
+.logo-area h1{
+    color:white;
+    font-size:22px;
+    letter-spacing:2px;
+}
+
+/* Categorías */
+.categorias{
+    display:flex;
+    gap:15px;
+}
+
+
+.categorias a{
+    text-decoration:none;
+    background:#1f3f7c;
+    color:white;
+    padding:6px 15px;
+    border-radius:6px;
+    font-size:14px;
+    transition:background 0.3s;
+}
+
+.categorias a:hover{
+    background:#162c57;
+}
+
+/* Barra búsqueda */
+.search-bar{
+    margin-left:auto;   /* empuja todo hacia la derecha */
+    margin-right:30px;  /* separa de los iconos */
+}
+
+.search-bar input{
+    padding:8px 20px;
+    border-radius:20px;
+    border:none;
+    width:320px;   /* más larga */
+    outline:none;
+    background-image: url("../IMAGENES/lupa.png");
+    background-repeat: no-repeat;
+    background-position: right 12px center; /* derecha y centrada vertical */
+    background-size: 18px; /* tamaño de la lupa */
+}
+
+
+/* Iconos */
+.icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+.icons img{
+    width:35px;          /* antes 20px */
+    background:white;
+    padding:2px;         /* más círculo */
+    border-radius:50%;
+    cursor:pointer;
+}
+.icons img:hover{
+    background:#e0e0e0;
+}
+
+/* ================= SECCIÓN PRODUCTO ================= */
+
+.Producto{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    padding:60px 40px;
+}
+
+.Producto > div{
+    background: transparent; 
+    border-radius:20px;
+    padding:40px;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:40px;
+}
+
+/* Tarjetas individuales */
+.Producto > div > div{
+    background:#3b5fa3;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between; /* distribuye imagen y texto */
+    align-items:center;
+}
+
+/* Contenedor fijo para imagen */
+.Producto img{
+    height:180px;        /* MISMA ALTURA PARA TODAS */
+    width:auto;          /* mantiene proporción */
+    object-fit:contain;  /* no se deforman */
+    margin-bottom:15px;
+}
+/* Hover efecto */
+.Producto > div > div:hover{
+    background:#1f3f7c;
+    transform:translateY(-5px);
+}
+
+/* Imágenes */
+.Producto img{
+    width:100%;
+    max-width:180px;
+    margin-bottom:15px;
+}
+
+/* Responsive */
+@media (max-width:768px){
+header{
+    padding:10px 20px;
+}
+
+.header-container{
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.logo{
+    width:55px;
+}
+
+.logo-area h1{
+    font-size:16px;
+}
+.categorias{
+    display:none;
+}
+.search-bar{
+    order:3;
+    width:100%;
+    margin:10px 0 0;
+}
+
+.search-bar input{
+    width:100%;
+}
+.icons img{
+    width:28px;
+    margin-left:auto;
+}
+.Producto > div{
+    grid-template-columns: 1fr; /* uno debajo de otro */
+    padding:25px;
+}
+}
