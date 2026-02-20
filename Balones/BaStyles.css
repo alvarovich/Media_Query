@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    margin:0;
+    padding-top:95px;   /* espacio para el header fijo */
+}
+/* ================= HEADER NUEVO ================= */
+
+header{
+    position:fixed;       
+    top:0;
+    left:0;
+    width:100%;
+    background:#2f5396;
+    padding:15px 40px;
+    z-index:1000;         /* siempre arriba */
+}
+
+
+.header-container{
+    display:flex;
+    align-items:center;
+    width:100%;
+}
+
+
+/* Logo + nombre */
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-right:40px;   /* separa logo de categorías */
+}
+
+
+.logo{
+    width:85px;          
+    background:white;
+    padding:2px;        
+    border-radius:50%;
+}
+
+
+
+.logo-area h1{
+    color:white;
+    font-size:22px;
+    letter-spacing:2px;
+}
+
+/* Categorías */
+.categorias{
+    display:flex;
+    gap:15px;
+}
+
+
+.categorias a{
+    text-decoration:none;
+    background:#1f3f7c;
+    color:white;
+    padding:6px 15px;
+    border-radius:6px;
+    font-size:14px;
+    transition:background 0.3s;
+}
+
+.categorias a:hover{
+    background:#162c57;
+}
+
+/* Barra búsqueda */
+.search-bar{
+    margin-left:auto;   /* empuja todo hacia la derecha */
+    margin-right:30px;  /* separa de los iconos */
+}
+
+.search-bar input{
+    padding:8px 20px;
+    border-radius:20px;
+    border:none;
+    width:320px;   /* más larga */
+    outline:none;
+}
+
+
+/* Iconos */
+.icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+.icons img{
+    width:35px;          /* antes 20px */
+    background:white;
+    padding:2px;         /* más círculo */
+    border-radius:50%;
+    cursor:pointer;
+}
