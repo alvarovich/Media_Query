@@ -93,6 +93,10 @@ header{
     border:none;
     width:320px;   /* más larga */
     outline:none;
+    background-image: url("../IMAGENES/lupa.png");
+    background-repeat: no-repeat;
+    background-position: right 12px center; /* derecha y centrada vertical */
+    background-size: 18px; /* tamaño de la lupa */
 }
 
 

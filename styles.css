@@ -111,6 +111,10 @@ header{
     border:none;
     width:320px;   /* más larga */
     outline:none;
+    background-image: url("IMAGENES/lupa.png");
+    background-repeat: no-repeat;
+    background-position: right 12px center; /* derecha y centrada vertical */
+    background-size: 18px; /* tamaño de la lupa */
 }
 
 
@@ -137,9 +141,9 @@ header{
 /* Botas */
 .botas{
     width:100%;
-    height:420px;                 /* ajusta a tu gusto */
+    height:420px;                 
     background-image: url('/IMAGENES/ZaFondo.jpg');
-    background-size: cover;       /* 🔥 llena todo el ancho */
+    background-size: cover;       /* llena todo el ancho */
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -147,7 +151,7 @@ header{
 /* Balones */
 .balones{
     width:100%;
-    height:420px;                 /* ajusta a tu gusto */
+    height:420px;                 
     background-image: url('/IMAGENES/BaFondo.jpg');
     background-size: cover;       /* llena todo el ancho */
     background-position: center;
@@ -156,7 +160,7 @@ header{
 }
 .espinilleras{
     width:100%;
-    height:420px;                 /* ajusta a tu gusto */
+    height:420px;                 
     background-image: url('/IMAGENES/EsFondo.jpg');
     background-size: cover;       /* llena todo el ancho */
     background-position: center;
@@ -165,7 +169,7 @@ header{
 }
 .guantes{
     width:100%;
-    height:420px;                 /* ajusta a tu gusto */
+    height:420px;                 
     background-image: url('/IMAGENES/GuFondo.jpg');
     background-size: cover;       /* llena todo el ancho */
     background-position: center;
@@ -174,7 +178,7 @@ header{
 }
 .camisetas{
     width:100%;
-    height:420px;                 /* ajusta a tu gusto */
+    height:420px;                 
     background-image: url('/IMAGENES/CaFondo.jpg');
     background-size: cover;       /* llena todo el ancho */
     background-position: center;
@@ -184,8 +188,8 @@ header{
 
 .btn{
     position:absolute;
-    bottom:30px;   /* 🔹 separación inferior */
-    right:30px;    /* 🔹 separación derecha */
+    bottom:30px;   
+    right:30px;    
     z-index: 2;
 }
 
@@ -203,7 +207,7 @@ header{
 
 .btn button:hover{
     background:#162c57;
-    transform: translateY(-2px); /* hover elegante */
+    transform: translateY(-2px); 
 }
 
 
