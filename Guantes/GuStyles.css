@@ -112,16 +112,16 @@ header{
     background:#e0e0e0;
 }
 
-/* ================= SECCIÓN GUANTES ================= */
+/* ================= SECCIÓN PRODUCTO ================= */
 
-.Producto-guantes{
+.Producto{
     display:flex;
     justify-content:center;
     width:100%;
     padding:60px 40px;
 }
 
-.Producto-guantes > div{
+.Producto > div{
     background:#ffffff; /* tono más claro que el header */
     border-radius:20px;
     padding:40px;
@@ -132,7 +132,7 @@ header{
 }
 
 /* Tarjetas individuales */
-.Producto-guantes > div > div{
+.Producto > div > div{
     background:#3b5fa3;
     border-radius:18px;
     padding:25px;
@@ -148,20 +148,20 @@ header{
 }
 
 /* Contenedor fijo para imagen */
-.Producto-guantes img{
+.Producto img{
     height:180px;        /* MISMA ALTURA PARA TODAS */
     width:auto;          /* mantiene proporción */
     object-fit:contain;  /* no se deforman */
     margin-bottom:15px;
 }
 /* Hover efecto */
-.Producto-guantes > div > div:hover{
+.Producto > div > div:hover{
     background:#1f3f7c;
     transform:translateY(-5px);
 }
 
 /* Imágenes */
-.Producto-guantes img{
+.Producto img{
     width:100%;
     max-width:180px;
     margin-bottom:15px;
@@ -200,7 +200,7 @@ header{
     width:28px;
     margin-left:auto;
 }
-.Producto-guantes > div{
+.Producto > div{
     grid-template-columns: 1fr; /* uno debajo de otro */
     padding:25px;
 }
